@@ -12,7 +12,8 @@
   "additionalDashboardUsers": {
     "users": []
   },
-  "tutorialProject": false,
+  "tutorialProject": true,
+  "tutorialId": "DKU_TUTORIAL_SQLINPYTHON",
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "gitCommitMode": "AUTO",
@@ -105,7 +106,8 @@
       }
     }
   },
-  "name": "SQL in Python (Advanced Tutorial)",
+  "name": "SQL in Python (Advanced Tutorial) for Aurelien Vetil",
+  "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
@@ -162,11 +164,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1574285839698
+    "lastModifiedOn": 1574285841818
   },
   "description": "# Learn how to perform SQL queries in Python recipes\n\n\u003cp class\u003d\"text-center\"\u003e\u003ca class\u003d\"btn btn--contained btn-datasets-color btn--large\" href\u003d\"https://learn.dataiku.com/howto/code/python/use-python-sql.html\" target\u003d\"_blank\"\u003e\u003ci class\u003d\"btn-cta-big-mod-icon\"\u003e\u003c/i\u003e\u0026nbsp;Start learning\u003c/a\u003e\u003c/p\u003e\n\nSQL is the most pervasive way to make data analysis queries. However, doing advanced logic, like loops, conditions, ... is often difficult in SQL. There are some options like stored queries, but they require learning new languages.\n\nDSS lets you run SQL queries directly from a Python recipe. This lets you:\n\n* sequence several SQL queries\n* dynamically generate some new SQL queries to execute in the database\n* use SQL to obtain some aggregated data for further numerical processing in Python\n* ...\n\nThese features are also available for Hive and Impala.\n\nIn this tutorial, we are going to use this ability to analyse a dataset from the San Francisco airport.",
   "shortDesc": "Advanced tutorial : How to use the SQL, Hive and Impala features in Python recipes",
