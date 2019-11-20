@@ -1,0 +1,125 @@
+{
+  "checklists": {
+    "checklists": []
+  }, 
+  "customMeta": {
+    "kv": {}
+  }, 
+  "flowOptions": {
+    "crossProjectBuildBehavior": "DEFAULT", 
+    "rebuildBehavior": "NORMAL"
+  }, 
+  "formatParams": {
+    "arrayMapFormat": "json", 
+    "charset": "utf8", 
+    "compress": "", 
+    "dateSerializationFormat": "ISO", 
+    "escapeChar": "\\", 
+    "hiveSeparators": [
+      "\u0002", 
+      "\u0003", 
+      "\u0004", 
+      "\u0005", 
+      "\u0006", 
+      "\u0007", 
+      "\b"
+    ], 
+    "normalizeDoubles": false, 
+    "parseHeaderRow": true, 
+    "probableNumberOfRecords": 14, 
+    "quoteChar": "\"", 
+    "separator": ",", 
+    "skipRowsAfterHeader": 0, 
+    "skipRowsBeforeHeader": 0, 
+    "style": "excel"
+  }, 
+  "formatType": "csv", 
+  "managed": false, 
+  "metrics": {
+    "probes": []
+  }, 
+  "params": {}, 
+  "partitioning": {
+    "dimensions": [], 
+    "ignoreNonMatchingFile": false
+  }, 
+  "schema": {
+    "columns": [
+      {
+        "maxLength": -1, 
+        "name": "Activity Period", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Operating Airline", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Operating Airline IATA Code", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Published Airline", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Published Airline IATA Code", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "GEO Summary", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "GEO Region", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Landing Aircraft Type", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Aircraft Body Type", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Aircraft Manufacturer", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Aircraft Model", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Aircraft Version", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Landing Count", 
+        "type": "string"
+      }, 
+      {
+        "maxLength": -1, 
+        "name": "Total Landed Weight", 
+        "type": "string"
+      }
+    ], 
+    "userModified": false
+  }, 
+  "tags": [
+    "creator_admin"
+  ], 
+  "type": "UploadedFiles"
+}

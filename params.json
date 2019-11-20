@@ -1,0 +1,180 @@
+{
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": []
+  },
+  "exposedObjects": {
+    "objects": []
+  },
+  "projectType": "REGULAR",
+  "owner": "admin",
+  "permissions": [],
+  "additionalDashboardUsers": {
+    "users": []
+  },
+  "tutorialProject": false,
+  "settings": {
+    "flowAnchorSourcesAndSinks": true,
+    "gitCommitMode": "AUTO",
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": true,
+      "mergeSqlPipelines": false,
+      "pruneBeforeSqlPipelines": true
+    },
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "attachmentBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    },
+    "codeEnvs": {
+      "python": {
+        "useBuiltinEnv": true,
+        "preventOverride": false
+      },
+      "r": {
+        "useBuiltinEnv": true,
+        "preventOverride": false
+      }
+    },
+    "container": {
+      "containerMode": "NONE"
+    },
+    "datasetsCreationSettings": {
+      "useGlobal": true,
+      "preferedStorageFormats": "CSV_ESCAPING_NOGZIP_FORHIVE,CSV_EXCEL_GZIP,PARQUET_HIVE",
+      "virtualizable": false,
+      "allowUploadsWithoutConnection": true
+    },
+    "hiveEngineCreationSettings": {
+      "useGlobal": true,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sparkEngineCreationSettings": {
+      "useGlobal": true,
+      "executionEngine": "SPARK_SUBMIT",
+      "useGlobalMetastore": false
+    },
+    "impalaEngineCreationSettings": {
+      "useGlobal": true,
+      "streamMode": true
+    },
+    "wikiSettings": {
+      "promoted": false
+    },
+    "cluster": {
+      "clusterMode": "INHERIT"
+    },
+    "k8sCluster": {
+      "clusterMode": "INHERIT"
+    },
+    "virtualWebAppBackendSettings": {
+      "mode": "INHERIT",
+      "preventOverride": false,
+      "infra": {
+        "containerSelection": {
+          "containerMode": "INHERIT"
+        },
+        "exposition": {
+          "type": "local_process",
+          "params": {}
+        },
+        "nbReplicas": 1
+      }
+    }
+  },
+  "name": "SQL in Python (Advanced Tutorial)",
+  "imgPattern": 8,
+  "metrics": {
+    "probes": [],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": []
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1574285839698
+  },
+  "description": "# Learn how to perform SQL queries in Python recipes\n\n\u003cp class\u003d\"text-center\"\u003e\u003ca class\u003d\"btn btn--contained btn-datasets-color btn--large\" href\u003d\"https://learn.dataiku.com/howto/code/python/use-python-sql.html\" target\u003d\"_blank\"\u003e\u003ci class\u003d\"btn-cta-big-mod-icon\"\u003e\u003c/i\u003e\u0026nbsp;Start learning\u003c/a\u003e\u003c/p\u003e\n\nSQL is the most pervasive way to make data analysis queries. However, doing advanced logic, like loops, conditions, ... is often difficult in SQL. There are some options like stored queries, but they require learning new languages.\n\nDSS lets you run SQL queries directly from a Python recipe. This lets you:\n\n* sequence several SQL queries\n* dynamically generate some new SQL queries to execute in the database\n* use SQL to obtain some aggregated data for further numerical processing in Python\n* ...\n\nThese features are also available for Hive and Impala.\n\nIn this tutorial, we are going to use this ability to analyse a dataset from the San Francisco airport.",
+  "shortDesc": "Advanced tutorial : How to use the SQL, Hive and Impala features in Python recipes",
+  "tags": [
+    "tutorial"
+  ],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
