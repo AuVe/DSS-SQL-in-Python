@@ -9,7 +9,6 @@ from dataiku.core.sql import SQLExecutor2
 
 # Get a handle on the input dataset
 sfo_prepared = dataiku.Dataset("sfo_prepared")
-sfo_prepared_df = sfo_prepared.get_dataframe()
 
 # We create an executor. We pass to it the dataset instance. This way, the
 # executor  knows which SQL database should be targeted
@@ -21,7 +20,7 @@ mf_manufacturers = executor.query_to_df(
     """
     select  "Aircraft Manufacturer" as manufacturer,
                 sum("Landing Count") as count
-            from sfo_prepared_df
+            from sfo_prepared
             group by "Aircraft Manufacturer"
             order by count desc limit 5
     """)
