@@ -31,4 +31,4 @@ mf_manufacturers = executor.query_to_df(
 print mf_manufacturers
 
 output_dataset = dataiku.Dataset("sfo_pivot")
-output_dataset.write_with_schema(result)
+output_dataset.write_with_schema(mf_manufacturers)
