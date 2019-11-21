@@ -19,7 +19,7 @@ mf_manufacturers = executor.query_to_df(
     """
     select      "Aircraft Manufacturer" as manufacturer,
                 sum("Landing Count") as count
-            from sfo_prepared
+            from "sfo_prepared"
             group by "Aircraft Manufacturer"
             order by count desc limit 5
     """)
