@@ -5,7 +5,6 @@ from dataiku import pandasutils as pdu
 
 # Import the class that allows us to execute SQL on the Studio connections
 from dataiku.core.sql import SQLExecutor2
-
 # Get a handle on the input dataset
 sfo_prepared = dataiku.Dataset("sfo_prepared")
 
