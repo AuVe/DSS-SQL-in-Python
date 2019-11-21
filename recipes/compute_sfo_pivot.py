@@ -27,24 +27,8 @@ mf_manufacturers = executor.query_to_df(
 # The "query_to_df" method returns a Pandas dataframe that
 # contains the manufacturers
 
-#cases = []
 
-for (row_index, manufacturer, count) in mf_manufacturers.itertuples():
-    cases.append(
-    """SUM (case when "Aircraft Manufacturer" = '%s'
-            then "Total Landed Weight" else 0 end)
-        as "weight_%s"
-        """ % (manufacturer, manufacturer))
-
-final_query = """select "Activity Period", "Operating Airline",
-        COUNT(*) as airline_count, %s
-        from sfo_prepared
-        group by "Activity Period", "Operating Airline"
-        """ % (",".join(cases))
-
-print final_query
-
-result = executor.query_to_df(final_query)
+print mf_manufacturers
 
 output_dataset = dataiku.Dataset("sfo_pivot")
 output_dataset.write_with_schema(result)
