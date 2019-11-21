@@ -5,11 +5,9 @@ from dataiku import pandasutils as pdu
 
 # Import the class that allows us to execute SQL on the Studio connections
 from dataiku.core.sql import SQLExecutor2
+
 # Get a handle on the input dataset
 sfo_prepared = dataiku.Dataset("sfo_prepared")
-
-sfo_prepared_df = sfo_prepared.get_dataframe()
-
 
 # We create an executor. We pass to it the dataset instance. This way, the
 # executor  knows which SQL database should be targeted
@@ -29,7 +27,7 @@ mf_manufacturers = executor.query_to_df(
 # The "query_to_df" method returns a Pandas dataframe that
 # contains the manufacturers
 
-cases = []
+#cases = []
 
 for (row_index, manufacturer, count) in mf_manufacturers.itertuples():
     cases.append(
