@@ -6,14 +6,12 @@ from dataiku import pandasutils as pdu
 # Import the class that allows us to execute SQL on the Studio connections
 from dataiku.core.sql import SQLExecutor2
 
-# Read recipe inputs
+# Get a handle on the input dataset
 sfo_prepared = dataiku.Dataset("sfo_prepared")
-
 
 # We create an executor. We pass to it the dataset instance. This way, the
 # executor  knows which SQL database should be targeted
 executor = SQLExecutor2(dataset=sfo_prepared)
-
 
 # Get the 5 most frequent manufacturers by total landing count
 # (over the whole period)
@@ -37,7 +35,7 @@ for (row_index, manufacturer, count) in mf_manufacturers.itertuples():
             then "Total Landed Weight" else 0 end)
         as "weight_%s"
         """ % (manufacturer, manufacturer))
-    
+
 final_query = """select "Activity Period", "Operating Airline",
         COUNT(*) as airline_count, %s
         from sfo_prepared
