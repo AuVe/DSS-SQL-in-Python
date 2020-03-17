@@ -3,7 +3,8 @@
     "SQLinPy Tutorial": {
       "remote": "https://github.com/AuVe/Repo.git",
       "checkout": "",
-      "remotePath": ""
+      "remotePath": "",
+      "lastHash": "73fa10beb97398e10618901c41ef08dff0082ee1"
     }
   },
   "pythonPath": [
