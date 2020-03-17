@@ -19,7 +19,20 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
-      "integrations": []
+      "integrations": [
+        {
+          "active": true,
+          "hook": {
+            "type": "github",
+            "configuration": {
+              "useProxy": true,
+              "username": "AuVe",
+              "accessToken": "dc2b73178b9a6f63efff2382f4b65d9227ef9abf",
+              "repository": "https://github.com/AuVe/Repo.git"
+            }
+          }
+        }
+      ]
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
@@ -98,11 +111,18 @@
         "containerSelection": {
           "containerMode": "INHERIT"
         },
+        "overrideGlobalK8sExposition": false,
         "exposition": {
           "type": "local_process",
           "params": {}
         },
-        "nbReplicas": 1
+        "scaling": {
+          "initialReplicas": 1,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0
+        }
       }
     }
   },
@@ -164,11 +184,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1574285841818
+    "lastModifiedOn": 1584477985515
   },
   "description": "# Learn how to perform SQL queries in Python recipes\n\n\u003cp class\u003d\"text-center\"\u003e\u003ca class\u003d\"btn btn--contained btn-datasets-color btn--large\" href\u003d\"https://learn.dataiku.com/howto/code/python/use-python-sql.html\" target\u003d\"_blank\"\u003e\u003ci class\u003d\"btn-cta-big-mod-icon\"\u003e\u003c/i\u003e\u0026nbsp;Start learning\u003c/a\u003e\u003c/p\u003e\n\nSQL is the most pervasive way to make data analysis queries. However, doing advanced logic, like loops, conditions, ... is often difficult in SQL. There are some options like stored queries, but they require learning new languages.\n\nDSS lets you run SQL queries directly from a Python recipe. This lets you:\n\n* sequence several SQL queries\n* dynamically generate some new SQL queries to execute in the database\n* use SQL to obtain some aggregated data for further numerical processing in Python\n* ...\n\nThese features are also available for Hive and Impala.\n\nIn this tutorial, we are going to use this ability to analyse a dataset from the San Francisco airport.",
   "shortDesc": "Advanced tutorial : How to use the SQL, Hive and Impala features in Python recipes",
