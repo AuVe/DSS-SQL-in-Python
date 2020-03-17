@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "SQLinPy Tutorial": {
+      "remote": "https://github.com/AuVe/Repo.git",
+      "checkout": "",
+      "remotePath": ""
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "SQLinPy Tutorial"
   ],
   "rsrcPath": [
     "R"
