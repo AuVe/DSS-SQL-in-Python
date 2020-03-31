@@ -25,8 +25,26 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "Aircraft Version"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +52,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "GEO Region": 100,
+    "Operating Airline": 246,
+    "Operating Airline IATA Code": 218,
+    "GEO Summary": 127,
+    "Aircraft Model": 120,
+    "Aircraft Body Type": 150,
+    "Landing Aircraft Type": 173,
+    "Activity Period": 128,
+    "Published Airline": 246,
+    "Published Airline IATA Code": 218,
+    "Landing Count": 113,
+    "Aircraft Manufacturer": 173,
+    "Total Landed Weight": 158,
+    "Aircraft Version": 135
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
